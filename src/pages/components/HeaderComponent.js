@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../../App.css';
 import {useLocation} from "react-router-dom";
-import SearchFormComponent from "./search/SearchFormComponent";
+import SearchFormComponent from "../../components/search/SearchFormComponent";
 
 function HeaderComponent() {
 

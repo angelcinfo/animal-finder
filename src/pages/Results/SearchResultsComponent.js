@@ -4,7 +4,7 @@ import {useParams} from "react-router-dom";
 import {saveSearchData} from "../../actions/commonActions";
 import {useDispatch} from "react-redux";
 import SearchDetailComponent from "./SearchDetailComponent";
-import NoResultsPageComponent from "../noResults/NoResultsComponent";
+import NoResultsPageComponent from "../NoResults/NoResultsComponent";
 import {NO_RESULTS} from "../../constants";
 
 function SearchResultsComponent() {

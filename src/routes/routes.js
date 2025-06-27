@@ -1,8 +1,8 @@
 import React from "react";
 import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
-import SearchResultsComponent from "../search/SearchResultsComponent";
-import BodyComponent from "../BodyComponent";
-import HeaderComponent from "../HeaderComponent";
+import SearchResultsComponent from "../pages/Results/SearchResultsComponent";
+import BodyComponent from "../pages/Home/BodyComponent";
+import HeaderComponent from "../pages/components/HeaderComponent";
 
 const AppRouter = () => {
     return (

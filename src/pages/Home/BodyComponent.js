@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App.css';
-import SearchPageComponent from "./search/SearchPageComponent";
+import '../../App.css';
+import SearchPageComponent from "./components/search/SearchPageComponent";
 
 function BodyComponent() {
     return (

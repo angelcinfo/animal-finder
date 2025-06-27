@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
-import FooterComponent from "./components/FooterComponent";
-import AppRouter from "./components/router/Router";
+import FooterComponent from "./pages/components/FooterComponent";
+import AppRouter from "./routes/routes";
 
 function App() {
   return (
