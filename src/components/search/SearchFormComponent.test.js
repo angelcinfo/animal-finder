@@ -18,7 +18,12 @@ describe('SearchFormComponent', () => {
 
     test('activates the search button when input is typed', () => {
         render(
-            <MemoryRouter>
+            <MemoryRouter
+                future={{
+                    v7_startTransition: true,
+                    v7_relativeSplatPath: true
+                }}
+            >
                 <Provider store={store}>
                     <SearchFormComponent />
                 </Provider>
@@ -37,7 +42,12 @@ describe('SearchFormComponent', () => {
 
     test('shows clear button when input has text', () => {
         render(
-            <MemoryRouter>
+            <MemoryRouter
+                future={{
+                    v7_startTransition: true,
+                    v7_relativeSplatPath: true
+                }}
+            >
                 <Provider store={store}>
                     <SearchFormComponent />
                 </Provider>
@@ -55,7 +65,12 @@ describe('SearchFormComponent', () => {
 
     test('clears input when clear button is clicked', () => {
         render(
-            <MemoryRouter>
+            <MemoryRouter
+                future={{
+                    v7_startTransition: true,
+                    v7_relativeSplatPath: true
+                }}
+            >
                 <Provider store={store}>
                     <SearchFormComponent />
                 </Provider>
@@ -79,7 +94,12 @@ describe('SearchFormComponent', () => {
         });
 
         render(
-            <MemoryRouter>
+            <MemoryRouter
+                future={{
+                    v7_startTransition: true,
+                    v7_relativeSplatPath: true
+                }}
+            >
                 <Provider store={storeWithData}>
                     <SearchFormComponent />
                 </Provider>

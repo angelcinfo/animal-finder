@@ -6,7 +6,12 @@ import HeaderComponent from "../pages/components/HeaderComponent";
 
 const AppRouter = () => {
     return (
-        <Router>
+        <Router
+            future={{
+                v7_startTransition: true,
+                v7_relativeSplatPath: true
+            }}
+        >
             <HeaderComponent />
             <Routes>
                     <Route path="/" element={<BodyComponent />} />
