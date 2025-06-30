@@ -23,6 +23,37 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+#### Tests Disponibles
+
+El proyecto incluye tests unitarios para los componentes principales:
+
+**SearchFormComponent Tests:**
+- ✅ Activación del botón de búsqueda cuando se escribe texto
+- ✅ Aparición del botón de limpiar cuando hay texto en el input
+- ✅ Funcionalidad de limpiar el input al hacer clic en el botón "✕"
+- ✅ Carga de datos iniciales desde el store de Redux
+
+**FooterComponent Tests:**
+- ✅ Renderizado correcto del texto "Animal Finder" en el footer
+
+Para ejecutar tests específicos:
+```bash
+# Ejecutar solo los tests de SearchFormComponent
+npm test -- --testPathPattern=SearchFormComponent.test.js --watchAll=false
+
+# Ejecutar solo los tests de FooterComponent
+npm test -- --testPathPattern=FooterComponent.test.js --watchAll=false
+
+# Ejecutar todos los tests sin modo watch
+npm test -- --watchAll=false
+```
+
+**Configuración de Testing:**
+- React Testing Library para renderizado y interacciones
+- MemoryRouter para proporcionar contexto de React Router
+- Redux Mock Store para simular el estado de la aplicación
+- Compatible con React 18.2.0 y React Router DOM 6.x
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
